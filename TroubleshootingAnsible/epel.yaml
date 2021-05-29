@@ -1,0 +1,9 @@
+---
+- name: deploy epel
+  hosts: all
+  vars:
+    package: https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+  tasks:
+  - name: install epel
+    yum: {{ package }}
+    state: present

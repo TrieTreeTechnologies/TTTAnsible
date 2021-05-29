@@ -1,0 +1,18 @@
+2021-05-24 23:17:04,238 p=1091 u=root n=ansible | localhost | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host localhost port 22: Connection refused",
+    "unreachable": true
+}
+2021-05-24 23:18:38,848 p=1191 u=root n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 20.04 on host 127.0.0.1 should use /usr/bin/python3, but is using 
+/usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release will default to using 
+the discovered platform python for this host. See 
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information. This feature 
+will be removed in version 2.12. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2021-05-24 23:18:38,870 p=1191 u=root n=ansible | 127.0.0.1 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
